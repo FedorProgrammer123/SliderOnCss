@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+    position: relative;
+    top: 290px;
+    justify-content: center;
+    gap: 1.5em;
+}
+.element2,.element3,.element4,.element5,.element6{
+    display: none;
+}
+input{
+    position: relative;
+    margin-top: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    left: 250px;
+}
+#second:checked ~ .element1{
+    display: none;
+}
+#third:checked ~ .element1{
+    display: none;
+}
+#fourth:checked ~ .element1{
+    display: none;
+}
+#fivth:checked ~ .element1{
+    display: none;
+}
+#six:checked ~ .element1{
+    display: none;
+}
+
+#second:checked ~ .element2{
+    display: block;
+}
+#third:checked ~ .element3{
+    display: block;
+}
+#fourth:checked ~ .element4{
+    display: block;
+}
+#fivth:checked ~ .element5{
+    display: block;
+}
+#six:checked ~ .element6{
+    display: block;
+}
+.oneis{
+    margin-top: 400px;
+}
+#first:checked ~ .oneis::before{
+    content: '1';
+}
+#second:checked ~ .oneis::before{
+    content: '2';
+}
+#third:checked ~ .oneis::before{
+    content: '3';
+}
+#fourth:checked ~ .oneis::before{
+    content: '4';
+}
+#fivth:checked ~ .oneis::before{
+    content: '5';
+}
+#six:checked ~ .oneis::before{
+    content: '6';
+}
